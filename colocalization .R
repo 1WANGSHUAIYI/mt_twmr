@@ -55,7 +55,6 @@ pqtl <- pqtl[pqtl$Gene %in% gene,]
 names(pqtl)[names(pqtl) == 'rs_id_dbSNP151_GRCh38p7'] <- 'rsid'
 names(pqtl)[names(pqtl) == 'pval_nominal'] <- 'pval'
 
-# ##给IV LD，算独立位点##
 # IV <- data.frame()
 # for (i in gene) {
 #   gene1 <-pqtl[pqtl$Gene == i,]
@@ -68,20 +67,13 @@ names(pqtl)[names(pqtl) == 'pval_nominal'] <- 'pval'
 # }
 
 
-#找独立位点#
 
 
-
-##GWAS数据 meta
 ngwas=463010
   case=54358
   
   #decode qtl
   neqtl=714
-  
-  
-  
-  #对每个gene单独读取并且共定位
   
   
   
